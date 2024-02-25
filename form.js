@@ -1,33 +1,44 @@
-const operand1 = 10;
-let operand2 = 4;
+let degrees = 14;
+let clothes
+switch (degrees) {
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+    case 24:
+    case 25:
+        clothes = "футболки, майки"
+        break;
 
-let sign = "/"
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+       clothes = "свитер, толстовка"
+       break;
 
-switch(sign) {
-    case "/": 
-    console.log();
-    if(operand2 == 0) {
-        console.log("0")
-    }
-    else {
-        console.log(operand1 / operand2)
-    }
-    break;
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+        clothes = "ветровки, куртки"
+        break;
 
-    case "*": 
-    console.log();
-    if(operand2 == 0) {
-        console.log("0")
-    }
-    else {
-        console.log(operand1 * operand2)
-    }
-    break;
-    case "+":
-        console.log(operand1 + operand2)
-    break;
-    case "-":
-        console.log(operand1 - operand2)
-    break;
+        case -0:
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        clothes = "пуховые куртки"
+        break;
+
+    default:
+        clothes = "неверное число градуса"
+        console.log("Вы ввели неверное число")
 }
-// сложностей не было всё так как вы объясняли :D
+
+console.log(`Предлагается надеть: ${clothes}`)
+
+
