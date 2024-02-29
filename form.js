@@ -1,33 +1,8 @@
-const operand1 = 10;
-let operand2 = 4;
+const cenatovara = ["100","110","120","130","140","150","160"]
+const cenatovara7 = "Цена товара за 7 дней";
 
-let sign = "/"
-
-switch(sign) {
-    case "/": 
-    console.log();
-    if(operand2 == 0) {
-        console.log("0")
-    }
-    else {
-        console.log(operand1 / operand2)
-    }
-    break;
-
-    case "*": 
-    console.log();
-    if(operand2 == 0) {
-        console.log("0")
-    }
-    else {
-        console.log(operand1 * operand2)
-    }
-    break;
-    case "+":
-        console.log(operand1 + operand2)
-    break;
-    case "-":
-        console.log(operand1 - operand2)
-    break;
+for (let i = 0; i < cenatovara.length;i++) {
+    console.log(cenatovara[i]);
 }
-// сложностей не было всё так как вы объясняли :D
+
+console.log(cenatovara7)
