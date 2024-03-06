@@ -1,8 +1,12 @@
-const cenatovara = ["100","110","120","130","140","150","160"]
-const cenatovara7 = "Цена товара за 7 дней";
 
-for (let i = 0; i < cenatovara.length;i++) {
-    console.log(cenatovara[i]);
+let cenatovara = 100;
+const procent = 10;
+const day = 7;
+
+for (let days = 0; days <= cenatovara.length; days++) {
+    cenatovara += cenatovara + cenatovara * procent / 100;
+   
+   
 }
 
-console.log(cenatovara7)
+console.log("Цена товара за 7 дней будет составлять:", cenatovara.toFixed(2), "рублей");
