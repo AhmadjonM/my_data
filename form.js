@@ -1,33 +1,12 @@
-const operand1 = 10;
-let operand2 = 4;
 
-let sign = "/"
+let cenatovara = 100;
+const procent = 10;
+const day = 7;
 
-switch(sign) {
-    case "/": 
-    console.log();
-    if(operand2 == 0) {
-        console.log("0")
-    }
-    else {
-        console.log(operand1 / operand2)
-    }
-    break;
-
-    case "*": 
-    console.log();
-    if(operand2 == 0) {
-        console.log("0")
-    }
-    else {
-        console.log(operand1 * operand2)
-    }
-    break;
-    case "+":
-        console.log(operand1 + operand2)
-    break;
-    case "-":
-        console.log(operand1 - operand2)
-    break;
+for (let days = 0; days <= cenatovara.length; days++) {
+    cenatovara += cenatovara + cenatovara * procent / 100;
+   
+   
 }
-// сложностей не было всё так как вы объясняли :D
+
+console.log("Цена товара за 7 дней будет составлять:", cenatovara.toFixed(2), "рублей");
